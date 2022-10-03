@@ -7,7 +7,7 @@ public class RequestDTO {
     private String name;
     private Integer id;
     private Tool tool;
-    private List<Car> carlist ;
+    private List<Car> carlist = new ArrayList<>();
 
     public String getName() {
         return name;

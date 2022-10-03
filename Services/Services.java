@@ -22,18 +22,14 @@ public class Services {
 
             switch (x.getValue()){
 
-                case "F" :
-
+                case"fr":
                     user.setCarEnum(CarEnum.FORD);
                     break;
-                case "A" :
-
+                case"au":
                     user.setCarEnum(CarEnum.AUDI);
                     break;
 
-                default:
-                    user.setCarEnum(CarEnum.NONE);
-                    break;
+
             }
         }
 
