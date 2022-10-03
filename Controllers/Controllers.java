@@ -2,18 +2,18 @@ package com.company.Controllers;
 
 import com.company.Services.ResponseDTO;
 import com.company.Services.Services;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RequestMapping("/Main")
-public class Controller {
+@Controller
+public class Controllers {
 
-
+    @Autowired
     private Services services;
 
-    public Controller(Services services) {
-        this.services = services;
-    }
 
     @PostMapping(value = "/a",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody

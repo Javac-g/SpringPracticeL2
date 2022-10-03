@@ -2,6 +2,7 @@ package com.company.Services;
 
 import com.company.Controllers.Car;
 import com.company.Controllers.RequestDTO;
+import org.springframework.stereotype.Service;
 
 import java.io.ByteArrayOutputStream;
 import java.io.DataOutputStream;
@@ -10,6 +11,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class Services {
     private List<ResponseDTO> datalist = new ArrayList<>();
 
@@ -22,13 +24,15 @@ public class Services {
 
             switch (x.getValue()){
 
-                case"fr":
+                case 1:
                     user.setCarEnum(CarEnum.FORD);
                     break;
-                case"au":
+                case 2:
                     user.setCarEnum(CarEnum.AUDI);
                     break;
 
+                default:
+                    user.setCarEnum(CarEnum.NONE);
 
             }
         }
