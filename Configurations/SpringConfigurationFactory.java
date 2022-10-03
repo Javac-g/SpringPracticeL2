@@ -13,7 +13,8 @@ public class SpringConfigurationFactory {
     @Bean(name = "Controller")
     @Scope(value = "prototype",proxyMode = ScopedProxyMode.TARGET_CLASS)
     public Controller controllerBean(){
-        return new Controller();
+        Controller controller=  new Controller(servicesBean());
+        return controller;
     }
     @Bean("Services")
     public Services servicesBean(){

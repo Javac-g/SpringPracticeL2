@@ -9,9 +9,12 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/Main")
 public class Controller {
 
-    @Autowired
+
     private Services services;
 
+    public Controller(Services services) {
+        this.services = services;
+    }
 
     @PostMapping(value = "/a",produces = MediaType.APPLICATION_JSON_VALUE)
     @ResponseBody
