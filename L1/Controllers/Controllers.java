@@ -1,7 +1,7 @@
-package com.company.Controllers;
+package com.company.L1.Controllers;
 
-import com.company.Services.ResponseDTO;
-import com.company.Services.Services;
+import com.company.L1.Services.ResponseDTO;
+import com.company.L1.Services.Services;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;

@@ -1,4 +1,4 @@
-package com.company.Controllers;
+package com.company.L1.Controllers;
 
 public class Car {
     private int value;

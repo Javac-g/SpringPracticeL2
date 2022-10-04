@@ -1,12 +1,13 @@
-package com.company.Services;
+package com.company.L1.Controllers;
 
-import com.company.Controllers.Tool;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ResponseDTO {
+public class RequestDTO {
     private String name;
     private Integer id;
     private Tool tool;
-    private CarEnum carEnum;
+    private List<Car> carlist = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -32,11 +33,11 @@ public class ResponseDTO {
         this.tool = tool;
     }
 
-    public CarEnum getCarEnum() {
-        return carEnum;
+    public List<Car> getCarlist() {
+        return carlist;
     }
 
-    public void setCarEnum(CarEnum carEnum) {
-        this.carEnum = carEnum;
+    public void setCarlist(List<Car> carlist) {
+        this.carlist = carlist;
     }
 }
